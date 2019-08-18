@@ -22,7 +22,7 @@ class Application
     resp.finish
   end
   
-  search_term = req.params[q]
+  search_term = req.params["q"]
 
   def handle_search(search_term)
     if @@items.include?(search_term)
